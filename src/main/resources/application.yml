@@ -4,10 +4,10 @@ spring:
       server:
         git:
           uri: https://github.com/thatmanmiamoro1y/config.git
-          search-paths: config-repo
-          basedir: config-repo
+          search-paths: config-repo-test
+          basedir: config-repo-test
           force-pull: true
-          default-label: master
+          default-label: test
           username: miamoro1y@163.com
           password: miamoro1y
 server:
