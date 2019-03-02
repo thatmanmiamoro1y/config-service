@@ -3,9 +3,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/thatmanmiamoro1y/config.git
+          uri: https://github.com/thatmanmiamoro1y/config-service.git
           search-paths: config-repo-dev
-          basedir: config-repo-dev
+          basedir: F:\MyServer\config-repo\config-repo-dev
           force-pull: true
           default-label: dev
           username: miamoro1y@163.com
