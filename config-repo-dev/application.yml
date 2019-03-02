@@ -26,8 +26,8 @@ eureka:
     hostname: eurekahostname
     prefer-ip-address: true
     metadata-map:
-      user.name: ${spring.security.user.name}
-      user.password: ${spring.security.user.password}
+      user.name: ${spring.security.user.name:thatman}
+      user.password: ${spring.security.user.password:miamoro1y}
   client:
     serviceUrl:
       defaultZone: http://thatman:miamoro1y@localhost:8000/eureka/

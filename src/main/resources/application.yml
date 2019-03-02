@@ -1,4 +1,13 @@
+server:
+  port: 8001
+
 spring:
+  security:
+    user:
+      name: thatman
+      password: miamoro1y
+  profiles:
+    active: dev
   cloud:
     config:
       server:
@@ -6,12 +15,13 @@ spring:
           uri: https://github.com/thatmanmiamoro1y/config-service.git
           search-paths: config-repo-dev
           basedir: F:\MyServer\config-repo\config-repo-dev
-          force-pull: true
-          default-label: dev
+          force-pull: false
+          default-label: ${spring.profiles.active}
           username: miamoro1y@163.com
           password: miamoro1y
-server:
-  port: 8001
+      username: config
+      password: config
+
 
 eureka:
   instance:
