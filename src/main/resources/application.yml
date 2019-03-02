@@ -4,8 +4,8 @@ server:
 spring:
   security:
     user:
-      name: config
-      password: config
+      name: thatman-config
+      password: thatman-config
   profiles:
     active: dev
   cloud:
@@ -31,5 +31,7 @@ eureka:
       name: ${spring.security.user.name}
       password: ${spring.security.user.password}
   client:
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
-      defaultZone: http://thatman:miamoro1y@localhost:8000/eureka/
+      defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka/

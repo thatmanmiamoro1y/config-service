@@ -3,6 +3,19 @@ server:
   servlet:
     context-path: /test-one-service
 
+eureka:
+  instance:
+    hostname: test-one-service
+    prefer-ip-address: true
+    metadata-map:
+      user.name: ${spring.security.user.name:thatman}
+      user.password: ${spring.security.user.password:miamoro1y}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka/
+
 
 username : config-userName
 userpassword : config-userPassword
