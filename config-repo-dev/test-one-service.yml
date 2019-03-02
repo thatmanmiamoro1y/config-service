@@ -5,6 +5,6 @@ server:
 
 
 username : config-userName
-userPassword : config-userPassword
+userpassword : config-userPassword
 
 
