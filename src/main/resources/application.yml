@@ -7,12 +7,9 @@ spring:
           search-paths: config-repo
           basedir: config-repo
           force-pull: true
-          default-label: dev
+          default-label: master
           username: miamoro1y@163.com
           password: miamoro1y
-      label: dev
-      username: thatman
-      password: miamoro1y
 server:
   port: 8001
 
