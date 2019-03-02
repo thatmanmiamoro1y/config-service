@@ -4,8 +4,8 @@ server:
 spring:
   security:
     user:
-      name: thatman
-      password: miamoro1y
+      name: config
+      password: config
   profiles:
     active: dev
   cloud:
@@ -14,13 +14,13 @@ spring:
         git:
           uri: https://github.com/thatmanmiamoro1y/config-service.git
           search-paths: config-repo-dev
-          basedir: F:\MyServer\config-repo\config-repo-dev
-          force-pull: false
-          default-label: ${spring.profiles.active}
+          basedir: F:\MyServer\config-repo
+          force-pull: true
+          default-label: dev
           username: miamoro1y@163.com
           password: miamoro1y
-      username: config
-      password: config
+      profile: dev
+      label: dev
 
 
 eureka:
