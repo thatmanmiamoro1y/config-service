@@ -2,4 +2,5 @@
 !pom.xml
 !.gitignore
 !src
+!config-repo-dev
 !config-repo-test
