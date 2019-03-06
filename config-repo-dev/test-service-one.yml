@@ -1,5 +1,6 @@
-
-
+server:
+  servlet:
+    context-path: /test-service-one
 eureka:
   instance:
     hostname: test-service-one
