@@ -1,11 +1,7 @@
-server:
-  port: 8504
-  servlet:
-    context-path: /test-one-service
 
 eureka:
   instance:
-    hostname: test-one-service
+    hostname: test-service-two
     prefer-ip-address: true
     metadata-map:
       user.name: ${spring.security.user.name:thatman}
