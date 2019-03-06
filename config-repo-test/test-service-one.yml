@@ -1,7 +1,3 @@
-server:
-  port: 8501
-  servlet:
-    context-path: /test-one-service
 
 eureka:
   instance:
