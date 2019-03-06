@@ -1,7 +1,7 @@
 
 eureka:
   instance:
-    hostname: test-two-service
+    hostname: test-service-two
     prefer-ip-address: true
     metadata-map:
       user.name: ${spring.security.user.name:thatman}
