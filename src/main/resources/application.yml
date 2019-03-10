@@ -7,20 +7,20 @@ spring:
       name: thatman-config
       password: thatman-config
   profiles:
-    active: dev
+    active: test
   cloud:
     config:
       server:
         git:
           uri: https://github.com/thatmanmiamoro1y/config-service.git
-          search-paths: config-repo-dev
+          search-paths: config-repo-test
           basedir: F:\MyServer\config-repo
           force-pull: true
-          default-label: dev
+          default-label: test
           username: miamoro1y@163.com
           password: miamoro1y
-      profile: dev
-      label: dev
+      profile: test
+      label: test
 
 
 eureka:
