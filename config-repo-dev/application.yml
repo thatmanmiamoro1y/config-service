@@ -23,9 +23,6 @@ management:
 
 spring:
   datasource:
-    ###################以下为druid增加的配置###########################
-    # 下面为连接池的补充设置，应用到上面所有数据源中
-    # 初始化大小，最小，最大\
     druid:
       url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
       username: root
