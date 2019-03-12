@@ -35,6 +35,8 @@ spring:
         # 最大活跃连接数，负数为不限制
         max-active: 80
 
+logging:
+  config: classpath:resources/logback-spring.xml
 
 userName : config-userName
 userPassword : config-userPassword
