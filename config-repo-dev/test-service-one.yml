@@ -36,7 +36,7 @@ spring:
         max-active: 80
 
 logging:
-  config: classpath:resources/logback-spring.xml
+  config: classpath:logback-spring.xml
 
 userName : config-userName
 userPassword : config-userPassword
