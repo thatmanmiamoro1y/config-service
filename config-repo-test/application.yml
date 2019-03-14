@@ -19,7 +19,20 @@ management:
   endpoints:
     web:
       exposure :
-        include: ["refresh"]
+        include: "*"
+
+eureka:
+  instance:
+    hostname: test-service-one
+    prefer-ip-address: true
+    metadata-map:
+      user.name: ${spring.security.user.name:thatman}
+      user.password: ${spring.security.user.password:miamoro1y}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka/
 
 spring:
   datasource:
@@ -71,4 +84,5 @@ mybatis-plus:
   # 数据库表与实体类的驼峰命名自动转换
   configuration:
     map-underscore-to-camel-case: true
+
 
