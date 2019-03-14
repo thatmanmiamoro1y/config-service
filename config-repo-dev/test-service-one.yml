@@ -10,7 +10,7 @@ spring:
     host: 127.0.0.1 # redis 地址
     port: 6379 # redis端口
     database: 0 # 使用的缓存库  共16个（0-15）
-    timeout: 2000  # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
+    timeout: 10000ms  # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
     # 连接池配置，2.0中直接使用jedis或者lettuce配置连接池
     requirePass: thatman-redis
     lettuce:
