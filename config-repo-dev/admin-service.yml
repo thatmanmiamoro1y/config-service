@@ -1,4 +1,7 @@
 server:
   servlet:
     context-path: /admin-service
-
+  security:
+    user:
+      name: thatman-admin
+      password: thatman-admin
