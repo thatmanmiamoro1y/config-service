@@ -1,7 +1,11 @@
 server:
   servlet:
     context-path: /admin-service
+spring:
+  application:
+    name: admin-service
   security:
     user:
       name: thatman-admin
       password: thatman-admin
+
