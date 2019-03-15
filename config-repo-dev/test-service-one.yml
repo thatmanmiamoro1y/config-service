@@ -6,6 +6,8 @@ logging:
   config: classpath:logback-spring.xml
 
 spring:
+  application:
+    name: test-service-one
   redis:
     host: 127.0.0.1 # redis 地址
     port: 6379 # redis端口
