@@ -1,6 +1,6 @@
-#server:
-#  servlet:
-#    context-path: /admin-service
+server:
+  servlet:
+    context-path: /admin-service
 spring:
   security:
     user:
