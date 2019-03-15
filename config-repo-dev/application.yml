@@ -27,6 +27,9 @@ management:
 eureka:
   instance:
     #  如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
+    health-check-url: http://localhost:${server.port}/${server.servlet.context-path:}/actuator/health
+    status-page-url: http://localhost:${server.port}/${server.servlet.context-path:}/actuator/info
+    home-page-url: http://localhost:${server.port}/
     hostname: test-service-one
     prefer-ip-address: true
     metadata-map:
