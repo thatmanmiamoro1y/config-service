@@ -15,10 +15,15 @@ hystrix:
           thread:
             timeoutInMilliseconds: 8000
 
+#actuator健康检测配置
 management:
+  endpoints:
+    web:
+      exposure :
+        include: refresh,health,info
   endpoint:
-    env:
-      enabled: true
+    health:
+      show-details: ALWAYS
 
 
 eureka:
