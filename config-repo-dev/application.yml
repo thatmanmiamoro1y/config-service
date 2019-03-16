@@ -32,6 +32,8 @@ eureka:
     status-page-url-path: /actuator/info
     health-check-url-path: /actuator/health
     home-page-url-path: /
+    #唯一的服务实例ID
+    instance-id: ${spring.application.name}-${spring.cloud.client.ip-address}:${server.port}
 
     hostname: eureka-service
     prefer-ip-address: true
