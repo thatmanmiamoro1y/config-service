@@ -56,6 +56,15 @@
     </dependencyManagement>
 
     <build>
+        <finalName>microservicecloud</finalName>
+        <resources>
+            <resource>
+                <!-- 允许访问src/main/resources下的内容 -->
+                <directory>src/main/resources</directory>
+                <!-- 过滤开启 -->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

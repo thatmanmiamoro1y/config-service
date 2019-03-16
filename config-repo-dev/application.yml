@@ -24,25 +24,29 @@ management:
     health:
       show-details: ALWAYS
 
+
 eureka:
   instance:
-    #  如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
-    health-check-url: http://localhost:${server.port}/${server.servlet.context-path:}/actuator/health
-    status-page-url: http://localhost:${server.port}/${server.servlet.context-path:}/actuator/info
-    home-page-url: http://localhost:${server.port}/
+    #如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
+    #告诉注册中心actuator访问路径
+    status-page-url-path: /actuator/info
+    health-check-url-path: /actuator/health
+    home-page-url-path: /
+
     hostname: eureka-service
     prefer-ip-address: true
     metadata-map:
-      management:
-        context-path: ${server.servlet.context-path:}
-      configPath: ${server.servlet.context-path:}
+      # 使用 spring boot admin 时,如果设置了 server.context-path,需要配置下面2个,否则在admin server 无法获取完整的监控数据
+      management.context-path: ${server.servlet.context-path}
+      management.context-port: ${server.port}
+
       user.name: ${spring.security.user.name:thatman}
       user.password: ${spring.security.user.password:miamoro1y}
   client:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka/
+      defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka-service/eureka/
 
 spring:
   datasource:
