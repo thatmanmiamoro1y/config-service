@@ -19,9 +19,12 @@ management:
   endpoints:
     web:
       exposure:
-        include: ["refresh","health","info"]
+        include: "*"  # * 在yaml 文件属于关键字，所以需要加引号
     health:
       show-details: ALWAYS
+  endpoint:
+    env:
+      enabled: true
 
 
 eureka:
