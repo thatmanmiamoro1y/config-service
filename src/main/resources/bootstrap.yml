@@ -29,7 +29,7 @@ management:
   endpoints:
     web:
       exposure :
-        include: refresh,health,info
+        include: health,info
   endpoint:
     health:
       show-details: ALWAYS
@@ -46,12 +46,6 @@ eureka:
     metadata-map:
       name: ${spring.security.user.name}
       password: ${spring.security.user.password}
-
-    #如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
-    #告诉注册中心actuator访问路径
-    status-page-url-path: /actuator/info
-    health-check-url-path: /actuator/health
-    home-page-url-path: /
   client:
     register-with-eureka: true
     fetch-registry: true
