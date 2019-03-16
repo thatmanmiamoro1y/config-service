@@ -18,8 +18,8 @@ hystrix:
 management:
   endpoints:
     web:
-      exposure :
-        include: refresh,health,info
+      exposure:
+        include: ["refresh","health","info"]
   endpoint:
     health:
       show-details: ALWAYS
