@@ -30,7 +30,7 @@ eureka:
   instance:
     #如果项目配置有 server.servlet.context-path 属性，想要被 spring boot admin 监控，就要配置以下属性
     #告诉注册中心actuator访问路径
-    status-page-url-path: ${server.servlet.context-path}/actuator/infox
+    status-page-url-path: ${server.servlet.context-path}/actuator/info
     health-check-url-path: ${server.servlet.context-path}/actuator/health
     home-page-url-path: ${server.servlet.context-path}/
     #注册到eureka唯一的服务实例ID
