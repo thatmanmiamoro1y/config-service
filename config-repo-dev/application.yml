@@ -34,8 +34,8 @@ eureka:
     #注册到eureka唯一的服务实例ID
     instance-id: ${spring.application.name}-${spring.cloud.client.ip-address}:${server.port}
     hostname: eureka-service
-    #指定ip
-    ip-address: locahost
+    #指定ip,默认去本地ip
+#    ip-address: locahost
     prefer-ip-address: true
     metadata-map:
       # 使用 spring boot admin 时,如果设置了 server.context-path,需要配置下面2个,否则在admin server 无法获取完整的监控数据
