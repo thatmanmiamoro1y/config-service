@@ -49,6 +49,11 @@ eureka:
       defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka-service/eureka/
 
 spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: thatman
+    password: miamoro1y
   datasource:
     druid:
       url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
