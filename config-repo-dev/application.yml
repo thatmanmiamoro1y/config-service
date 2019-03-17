@@ -52,8 +52,8 @@ spring:
   rabbitmq:
     host: 127.0.0.1
     port: 15672
-    username: thatman
-    password: miamoro1y
+    username: guest
+    password: guest
   datasource:
     druid:
       url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
