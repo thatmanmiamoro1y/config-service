@@ -50,7 +50,7 @@ eureka:
 
 spring:
   rabbitmq:
-    addresses: 127.0.0.1:15672
+    addresses: localhost:15672
     connection-timeout: 15000
     virtual-host: /
     username: thatman
