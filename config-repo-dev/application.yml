@@ -55,6 +55,10 @@ spring:
     virtual-host: /
     username: thatman
     password: miamoro1y
+    # 开启发送确认
+    publisher-confirms: true
+    # 开启发送失败退回
+    publisher-returns: true
   datasource:
     druid:
       url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
