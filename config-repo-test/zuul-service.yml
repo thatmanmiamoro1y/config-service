@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /zuul-service
+spring:
+  security:
+    user:
+      name: thatman-admin
+      password: thatman-admin
+zuul:
+  routes:
+    sina:
+      path: /sina/**
+      url: http://www.sina.com.cn
+    baidu:
+      path: /baidu/**
+      url: http://www.baidu.com
+
