@@ -11,11 +11,14 @@ zuul:
     sina:
       path: /sina/**
       url: http://www.sina.com.cn
-    baidu:
+      stripPrefix: false
+    xxx:
       path: /baidu/**
       url: http://www.baidu.com
+      stripPrefix: false
 
     test-service-one:
       path: /test-service-one/**
       serviceId: test-service-one
+      stripPrefix: false
 
