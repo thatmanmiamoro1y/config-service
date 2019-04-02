@@ -15,3 +15,7 @@ zuul:
       path: /baidu/**
       url: http://www.baidu.com
 
+    test-service-one:
+      path: /test-service-one/**
+      serviceId: test-service-one
+
