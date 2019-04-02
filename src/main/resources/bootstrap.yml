@@ -18,10 +18,13 @@ spring:
           search-paths: config-repo-dev
           basedir: target/config-service
           force-pull: true
+          # 默认分支
           default-label: dev
           username: miamoro1y@163.com
           password: miamoro1y
+     # 后缀
       profile: dev
+     # 配置仓库的分支
       label: dev
 
 #actuator健康检测配置
