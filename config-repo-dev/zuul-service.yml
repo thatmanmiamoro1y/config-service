@@ -9,9 +9,9 @@ spring:
 zuul:
   routes:
     sina:
-      path: /sina/**
+      path: /sina1/**
       url: http://www.sina.com.cn
-    bai:
+    baidu:
       path: /xxx/**
       url: http://www.baidu.com
     service-one:
