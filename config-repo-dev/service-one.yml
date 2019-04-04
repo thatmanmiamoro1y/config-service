@@ -1,6 +1,3 @@
-server:
-  servlet:
-    context-path: /service-one
 
 
 userName : config-userName
