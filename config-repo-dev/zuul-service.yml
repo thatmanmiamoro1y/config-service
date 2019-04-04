@@ -9,14 +9,12 @@ spring:
 zuul:
   routes:
     sina:
-      path: /sina1/**
+      path: /sina/**
       url: http://www.sina.com.cn
-      stripPrefix: false
     baidu:
       path: /xxx/**
       url: http://www.baidu.com
     service-one:
       path: /service-one/**
       serviceId: service-one
-      stripPrefix: false
 
