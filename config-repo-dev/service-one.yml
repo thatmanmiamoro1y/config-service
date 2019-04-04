@@ -1,57 +1,5 @@
 
-logging:
-  config: classpath:logback-spring.xml
 
-spring:
-  datasource:
-    druid:
-      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
-      username: root
-      password: 123456
-      driver-class-name: com.mysql.jdbc.Driver
-      initialSize: 5
-      #空闲的连接数个数
-      minIdle: 5
-      #最大连接数个数
-      maxActive: 20
-      # 配置获取连接等待超时的时间
-      maxWait: 60000
-      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
-      timeBetweenEvictionRunsMillis: 60000
-      # 配置一个连接在池中最小生存的时间，单位是毫秒
-      minEvictableIdleTimeMillis: 300000
-      #系统启动时通过该sql语句验证数据库是否可用，例如oracle用SELECT 'x' from dual，mysql用SELECT 'x'
-      validationQuery: SELECT 'X'
-      #启用空闲连接检测，以便回收
-      testWhileIdle: true
-      #从连接池获取连接时，是否检测连接可用性，开启性能会有些许影响
-      testOnBorrow: false
-      #释放连接到连接池时，是否检测连接可用性，开启性能会有些许影响
-      testOnReturn: false
-      # 游标是否缓存
-      poolPreparedStatements: false
-      #暂离理解为游标缓存数
-      maxPoolPreparedStatementPerConnectionSize: -1
-      # 通过别名的方式配置扩展插件，常用的插件有：监控统计用的filter:stat；日志用的filter:log4j；防御sql注入的filter:wall
-      filters: stat #,wall,log4j
-      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
-      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-      db-type: com.alibaba.druid.pool.DruidDataSource
-
-    # 合并多个DruidDataSource的监控数据
-    #  #spring.datasource.useGlobalDataSourceStat=true
-  ###############以上为配置druid添加的配置########################################
-
-# 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
-# 如果是放在resource目录 classpath:/mapper/*Mapper.xml
-
-mybatis-plus:
-  mapper-locations: classpath:/mapping/*.xml
-  # MyBaits 别名包扫描路径，通过该属性可以给包中的类注册别名，注册后在 Mapper 对应的 XML 文件中可以直接使用类名，而不用使用全限定的类名
-  type-aliases-package: com.thatman.testservice.entity
-  # 数据库表与实体类的驼峰命名自动转换
-  configuration:
-    map-underscore-to-camel-case: true
 
 userName : config-userName
 userPassword : config-userPassword
