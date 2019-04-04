@@ -15,7 +15,6 @@ zuul:
     xxx:
       path: /baidu/**
       url: http://www.baidu.com
-      stripPrefix: false
 
     service-one:
       path: /service-one/**
