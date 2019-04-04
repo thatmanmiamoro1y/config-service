@@ -1,5 +1,4 @@
-servlet:
-  context-path: /api
+
 logging:
   config: classpath:logback-spring.xml
 

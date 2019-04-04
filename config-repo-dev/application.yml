@@ -1,5 +1,6 @@
-servlet:
-  context-path: /api
+server:
+  servlet:
+    context-path: /api
 feign:
   client:
     config:
