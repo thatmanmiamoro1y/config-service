@@ -17,5 +17,4 @@ zuul:
     service-one:
       path: /service-one/**
       serviceId: service-one
-      stripPrefix: false
 
