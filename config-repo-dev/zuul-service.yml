@@ -20,5 +20,4 @@ zuul:
     test-service-one:
       path: /test-service-one/**
       serviceId: test-service-one
-      stripPrefix: false
 
