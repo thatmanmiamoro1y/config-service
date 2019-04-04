@@ -11,7 +11,6 @@ zuul:
     sina:
       path: /sina/**
       url: http://www.sina.com.cn
-      stripPrefix: false
     xxx:
       path: /baidu/**
       url: http://www.baidu.com
