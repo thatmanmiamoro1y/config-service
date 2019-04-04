@@ -48,7 +48,10 @@ eureka:
     serviceUrl:
       defaultZone: http://thatman-eureka:miamoro1y-eureka@localhost:8000/eureka-service/eureka/
 
+
 spring:
+  servlet:
+    context-path: /api
   rabbitmq:
     addresses: 127.0.0.1:5672
     connection-timeout: 15000
