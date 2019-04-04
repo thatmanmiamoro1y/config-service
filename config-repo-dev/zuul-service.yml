@@ -17,4 +17,7 @@ zuul:
     service-one:
       path: /service-one/**
       serviceId: service-one
+    service-two:
+      path: /service-two/**
+      serviceId: service-two
 
