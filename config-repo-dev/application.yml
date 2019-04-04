@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /apiz
+    context-path: /api
 feign:
   client:
     config:
