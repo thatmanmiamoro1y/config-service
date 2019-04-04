@@ -17,7 +17,7 @@ zuul:
       url: http://www.baidu.com
       stripPrefix: false
 
-    test-service-one:
+    t:
       path: /test-service-one/**
       serviceId: test-service-one
 
